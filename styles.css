@@ -1,0 +1,185 @@
+
+:root {
+    --cor-de-fundo: #a4a4a4;
+    --branco: #ffffff;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cabeçalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(img/MENU_SITE-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+
+  .container__botao:checked ~ .lista-menu {
+    display: block;
+  }
+
+  .lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+  }
+  .lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+  background-color: var(--branco);
+}
+
+:root {
+    --cor-de-fundo: #ebecee;
+    --branco: #ffffff;
+    --verde: #0b5101;
+    --azul-degrade: linear-gradient(97.54deg, rgb(0, 77, 23) 35.49%, #00b533 165.37%);
+    --fonte-principal: "Poppins";
+  }
+
+  .container__botao {
+    display: none;
+  }
+
+  @import url("styles/header.css");
+@import url("styles/banner.css");
+
+.banner {
+    background: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5em 2em;
+  }
+
+  .banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .banner__texto {
+    font-weight: 500;
+    margin: 1em 0;
+  }
+
+  .banner__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+  }
+
+  .banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--preto);
+    background: url("../img/Lupa.svg") no-repeat;
+    background-position: 1em;
+  }
+
+  @import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+
+.carrossel__titulo {
+  color: var(--verde);
+  background-color: var(--branco);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+  width: 80%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: initial;
+  margin: 0.5em 0;
+}
+
+.card {
+  background: var(--verde);
+  box-shadow: 0px 4px 4px rgba(164, 164, 164, 0.25);
+  border-radius: 10px;
+  margin: 1em;
+  padding: 1em;
+}
+
+.card__descrição {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.card__botões {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descrição__titulo {
+  color: var(--laranj);
+  font-weight: 700;
+}
+
+.descrição__texto {
+  font-size: 14px;
+}
+
+.descrição__titulo-livro {
+  color: var(--azul-degrade);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.botões__ancora {
+  background-color: var(--laranja);
+  padding: 1em 2.2em;
+  color: var(--branco);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.botões__item {
+  margin: 0 0.5em;
+}
